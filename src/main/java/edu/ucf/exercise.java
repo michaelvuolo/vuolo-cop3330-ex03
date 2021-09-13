@@ -9,19 +9,22 @@ import java.util.Scanner;
 
 public class exercise {
     public static void main(String[] args) {
-        // prompt for string
-        System.out.print("What is the input string? ");
+        // prompt for quote
+        System.out.print("What is the quote? ");
 
         // create new scanner
         Scanner input = new Scanner(System.in);
 
-        // read user's response
-        String response = input.nextLine();
+        // read user's quote
+        String quote = input.nextLine();
 
-        // get length of response
-        int length = response.length();
+        // prompt for author
+        System.out.print("Who said it? ");
 
-        // output response along with its length
-        System.out.print(response + " has " + length + " characters.");
+        // read user's author
+        String author = input.nextLine();
+
+        // output
+        System.out.print(author + " says, " + "\"" + quote + "\"");
     }
 }
